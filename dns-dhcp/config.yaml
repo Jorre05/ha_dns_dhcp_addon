@@ -1,5 +1,5 @@
 name: "DNS-DHCP Server"
-version: "1.0.9"
+version: "1.0.10"
 slug: "dns-dhcp"
 description: "Home Assistant DNS-DHCP"
 url: "https://github.com/Jorre05/ha_dns_dhcp_addon"
@@ -8,9 +8,9 @@ arch:
   - amd64
 init: false
 ports:
-  53/udp: 1053
-  53/tcp: 1053
-  67/udp: 1067
+  53/udp: 53
+  53/tcp: 53
+  67/udp: 67
 map:
   - addon_config:rw 
   - share:rw
