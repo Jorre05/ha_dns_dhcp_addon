@@ -7,4 +7,4 @@
 
 
 ## Run your program
-exec date
+exec /usr/sbin/kea-dhcp4
