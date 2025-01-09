@@ -13,7 +13,6 @@ ports:
 map:
   - addon_config:rw 
   - share:rw
-image: ghcr.io/cmsj/{arch}-ha-dns-dhcp-addon
 options:
   interface: "etho"
 schema:
