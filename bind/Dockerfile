@@ -5,5 +5,6 @@ FROM $BUILD_FROM
 RUN apk add --no-cache bind
 RUN apk add --no-cache dhcp
 
+
 # Copy root filesystem
 COPY rootfs /
