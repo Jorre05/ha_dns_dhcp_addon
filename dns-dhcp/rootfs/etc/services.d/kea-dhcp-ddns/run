@@ -12,13 +12,14 @@ if [ ! -f /config/kea-ddns.conf ]; then
     chmod 644 /config/kea-dhcp-ddns.conf
 fi
 
-if [ ! -d /var/run/kea ]; then
+if [ ! -d /var/kea ]; then
     bashio::log.info "Creating kea run folder"
     mkdir -p /var/run/kea
-    chown kea:kea /var/run/kea
-    chmod 755 /var/run/kea
+    chown kea:kea /run/kea
+    chmod 755 /run/kea
 fi
 
+bashio::log.info "Starting kea-dhcp-ddns"
 ## Run your program
 exec /usr/sbin/kea-dhcp-ddns -c /config/kea-dhcp-ddns.conf
 bashio::log.info "Voorbij kea-dhcp-ddns start stuff"
