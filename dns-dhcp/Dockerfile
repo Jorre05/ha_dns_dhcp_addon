@@ -4,6 +4,7 @@ FROM $BUILD_FROM
 
 RUN apk add --no-cache bind
 RUN apk add --no-cache kea-dhcp4
+RUN apk add --no-cache kea-dhcp-ddns
 
 # Copy root filesystem
 COPY rootfs /
