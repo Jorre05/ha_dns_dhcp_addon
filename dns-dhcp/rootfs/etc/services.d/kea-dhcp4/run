@@ -16,7 +16,7 @@ if [ ! -d /run/kea ]; then
     bashio::log.info "Creating key run folder"
     mkdir -p /run/kea
     chown kea:kea /run/kea
-    chmod 755 /un/kea
+    chmod 755 /run/kea
 fi
 bashio::log.info "Starting kea-dhcp4"
 ## Run your program
