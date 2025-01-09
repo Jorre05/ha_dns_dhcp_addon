@@ -3,8 +3,7 @@ ARG BUILD_FROM
 FROM $BUILD_FROM
 
 RUN apk add --no-cache bind
-RUN apk add --no-cache dhcp
-
+RUN apk add --no-cache kea-dhcp4
 
 # Copy root filesystem
 COPY rootfs /
