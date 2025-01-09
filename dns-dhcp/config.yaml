@@ -8,9 +8,9 @@ arch:
   - amd64
 init: false
 ports:
-  53/udp: 53
-  53/tcp: 53
-  67/udp: 67
+  1053/udp: 1053
+  1053/tcp: 1053
+  1067/udp: 1067
 map:
   - addon_config:rw 
   - share:rw
