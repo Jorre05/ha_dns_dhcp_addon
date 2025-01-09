@@ -14,7 +14,7 @@ fi
 
 if [ ! -d /var/kea ]; then
     bashio::log.info "Creating kea run folder"
-    mkdir -p /var/run/kea
+    mkdir -p /run/kea
     chown kea:kea /run/kea
     chmod 755 /run/kea
 fi
