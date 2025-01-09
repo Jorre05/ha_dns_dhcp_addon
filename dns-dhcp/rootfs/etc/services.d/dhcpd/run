@@ -9,13 +9,13 @@
 if [ ! -f /config/kea.conf ]; then
     bashio::log.info "Creating default kea.conf"
     cp /etc/kea/kea-dhcp4.conf /config/kea-dhcp4.conf
-    chmod 644 /config/kea.conf
+    chmod 644 /config/kea-dhcp4.conf
 fi
 
 if [ ! -f /config/kea-ddns.conf ]; then
     bashio::log.info "Creating default kea-ddns.conf"
     cp /etc/kea/kea-dhcp-ddns.conf /config/kea-dhcp-ddns.conf
-    chmod 644 /config/kea-ddns.conf
+    chmod 644 /config/kea-dhcp-ddns.conf
 fi
 
 ## Run your program
