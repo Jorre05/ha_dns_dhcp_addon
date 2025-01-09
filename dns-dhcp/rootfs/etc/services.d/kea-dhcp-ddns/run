@@ -13,7 +13,7 @@ if [ ! -f /config/kea-ddns.conf ]; then
 fi
 
 if [ ! -d /var/run/kea ]; then
-    bashio::log.info "Creating zones folder"
+    bashio::log.info "Creating kea run folder"
     mkdir -p /var/run/kea
     chown key:key/var/run/kea
     chmod 755 /var/run/kea
