@@ -6,7 +6,7 @@
 # ==============================================================================
 
 
-if [ ! -f /config/kea.conf ]; then
+if [ ! -f /config/kea-dhcp4.conf ]; then
     bashio::log.info "Creating default kea.conf"
     cp /etc/kea/kea-dhcp4.conf /config/kea-dhcp4.conf
     chmod 644 /config/kea-dhcp4.conf
