@@ -14,9 +14,5 @@ ports:
 map:
   - addon_config:rw 
   - share:rw
-options:
-  interface: "etho"
-schema:
-  interface: "str?"
 backup_exclude:
   - '*/cache'
