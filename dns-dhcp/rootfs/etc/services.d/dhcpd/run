@@ -7,4 +7,5 @@
 
 
 ## Run your program
-exec /usr/sbin/kea-dhcp4
+exec /usr/sbin/kea-dhcp4 -c /config/kea.conf
+exec /usr/sbin/kea-dhcp-ddns -c /config/kea-ddns.conf
