@@ -1,1 +1,1 @@
-DCSys Home assistant add-on
+Home assistant DNS-DHCP add-on
