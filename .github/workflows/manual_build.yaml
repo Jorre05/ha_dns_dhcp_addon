@@ -1,15 +1,13 @@
-name: Builder
+name: Manual Builder
 
 env:
   BUILD_ARGS: "--test"
-  MONITORED_FILES: "build.yaml config.yaml Dockerfile rootfs"
 
 on:
   workflow_dispatch:
 
 jobs:
   build:
-    needs: init
     runs-on: ubuntu-latest
     name: Build ${{ matrix.arch }} ${{ matrix.addon }} add-on
     strategy:
