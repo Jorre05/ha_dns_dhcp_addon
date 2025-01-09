@@ -6,7 +6,7 @@
 # ==============================================================================
 
 
-if [ ! -f /config/kea-ddns.conf ]; then
+if [ ! -f /config/kea-dhcp-ddns.conf ]; then
     bashio::log.info "Creating default kea-dhcp-ddns.conf"
     cp /etc/kea/kea-dhcp-ddns.conf /config/kea-dhcp-ddns.conf
     chmod 644 /config/kea-dhcp-ddns.conf
