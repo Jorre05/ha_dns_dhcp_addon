@@ -1,5 +1,5 @@
 name: "DNS-DHCP Server"
-version: "1.0.2"
+version: "1.0.3"
 slug: "dns-dhcp"
 description: "Home Assistant DNS-DHCP"
 url: "https://github.com/Jorre05/ha_dns_dhcp_addon"
